@@ -9,6 +9,10 @@
 <body>
   <div class="container">
     <h2>Helpdesk Logbook</h2>
+
+    <!-- Logout Button -->
+    <button id="logoutBtn" class="logout-btn">← Back / Logout</button>
+
     <form id="logForm">
       <select id="officer" required>
         <option value="">Select IT Officer</option>
@@ -48,6 +52,18 @@
     </form>
   </div>
 
+  <script>
+    // Redirect if not logged in
+    if (!localStorage.getItem("loggedIn")) {
+      window.location.href = "index.html";
+    }
+
+    // Logout button
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      localStorage.removeItem("loggedIn");
+      window.location.href = "index.html";
+    });
+  </script>
   <script src="logbook.js"></script>
 </body>
 </html>
