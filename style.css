@@ -55,6 +55,16 @@ button:hover {
   background: #0056b3;
 }
 
+/* ===== Logout Button ===== */
+.logout-btn {
+  background: #dc3545;
+  margin-bottom: 15px;
+}
+
+.logout-btn:hover {
+  background: #a71d2a;
+}
+
 /* ===== Error Messages ===== */
 .error {
   color: red;
