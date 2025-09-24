@@ -8,7 +8,7 @@ body {
 
 .container {
   max-width: 400px;
-  width: 90%; /* Shrinks nicely on mobile */
+  width: 90%;
   margin: 30px auto;
   background: #fff;
   padding: 20px;
@@ -63,6 +63,35 @@ button:hover {
   margin-top: 5px;
 }
 
+/* ===== Password Field with Eye Toggle ===== */
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 40px; /* space for eye button */
+  box-sizing: border-box;
+}
+
+.password-container button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+  line-height: 1;
+}
+
+.password-container button:focus {
+  outline: none;
+}
+
 /* ===== Utility: Flex Row for Dates/Times ===== */
 .row {
   display: flex;
@@ -73,22 +102,34 @@ button:hover {
   flex: 1;
 }
 
-/* ===== Mobile Adjustments ===== */
-@media (max-width: 480px) {
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
   .container {
-    margin: 15px;
+    width: 95%;
+    margin: 20px auto;
     padding: 15px;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 10px;
+    padding: 12px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
   }
 
   input,
   select,
   textarea,
   button {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     padding: 8px;
   }
 
