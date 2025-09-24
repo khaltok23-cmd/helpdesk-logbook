@@ -73,35 +73,6 @@ button:hover {
   margin-top: 5px;
 }
 
-/* ===== Password Field with Eye Toggle ===== */
-.password-container {
-  position: relative;
-  width: 100%;
-}
-
-.password-container input {
-  width: 100%;
-  padding-right: 40px; /* space for eye button */
-  box-sizing: border-box;
-}
-
-.password-container button {
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  padding: 0;
-  line-height: 1;
-}
-
-.password-container button:focus {
-  outline: none;
-}
-
 /* ===== Utility: Flex Row for Dates/Times ===== */
 .row {
   display: flex;
