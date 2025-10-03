@@ -36,3 +36,4 @@ document.getElementById("logForm").addEventListener("submit", e => {
     console.error(err);
   });
 });
+
